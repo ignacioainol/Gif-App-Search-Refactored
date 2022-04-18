@@ -1,4 +1,4 @@
-import { GifGridItem } from './GifGridItem';
+import { GifItem } from './GifItem';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { Loading } from './Loading';
 
@@ -17,7 +17,7 @@ export const GifGrid = ({ category }) => {
       <div className='row'>
         {
           images.map((image) => (
-            <GifGridItem
+            <GifItem
               key={image.id}
               {...image}
             />

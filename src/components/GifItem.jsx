@@ -1,6 +1,8 @@
 import { removeWord } from "../helpers/globalFunctions"
+import PropTypes from 'prop-types';
 
-export const GifGridItem = ({ title, url }) => {
+
+export const GifItem = ({ title, url }) => {
 
   const formatTitle = removeWord(title, 'GIF');
 
@@ -11,3 +13,8 @@ export const GifGridItem = ({ title, url }) => {
     </div >
   )
 }
+
+GifItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+};
