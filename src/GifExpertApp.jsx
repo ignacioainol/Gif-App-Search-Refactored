@@ -15,7 +15,7 @@ export const GifExpertApp = () => {
   return (
     <div className="container pt-5">
       <h1>Gif Search</h1>
-      <figcaption class="blockquote-footer animate__animated animate__backInDown">
+      <figcaption className="blockquote-footer animate__animated animate__backInDown">
         Developed by <cite title="ignacio_Ainol">ignacio_Ainol</cite>
       </figcaption>
 
